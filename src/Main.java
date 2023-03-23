@@ -21,11 +21,9 @@ public class Main {
         b.setPages(252);
         b.setReleaseYear(2000);
 
-
         Book d = new Book("Autoriu šešėlis", 500, 1993);
         Book e = new Book("Stovumas  ", 30, 1980);
         Book f = new Book("Laivavedybos pagrindai", 350, 1993);
-
 
         books.add(a);
         books.add(b);
@@ -36,7 +34,7 @@ public class Main {
 
         System.out.println("-------------------------------");
 
-        System.out.println(books);
+        System.out.print(books);
 
         for (int i = 0; i < books.size(); i++) {
             System.out.println(books.get(i));
@@ -45,11 +43,40 @@ public class Main {
         System.out.println("----------------------------2------------------------");
 
 
-
         ArrayList<Plant> plants = new ArrayList<>();
 
         Plant aa = new Plant();
-        aa.setTitle("Rožė");
+        aa.setTitle("Rožė. ");
+        aa.setTitleLatin("Rosa. ");
+        aa.setAnnualPerennial(false);
+        aa. setPlantContinent("Kinija. ");
+        aa. setHeightAdultPlantInMeters(7);
+        aa. setEdibleInedible(true);
+
+        System.out.println((int) aa.getHeightAdultPlantInMeters());
+        Plant aa2 = new Plant();
+        aa2.setTitle("Triskiautė žibuoklė. ");
+        aa2.setTitleLatin("Hepatica nobilis. ");
+        aa2.setAnnualPerennial(true);
+        aa2. setPlantContinent("Europa. ");
+        aa2. setHeightAdultPlantInMeters(0.25);
+        aa2. setEdibleInedible(false);
+
+        Plant aa3 = new Plant("Saulėgrąža","Helianthus", true ,"Europa",
+                Math.round(3), true  );
+
+
+
+        plants.add(aa);
+        plants.add(aa2);
+        plants.add(aa3);
+
+        for (int i = 0; i <plants.size(); i++) {
+            System.out.println(plants.get(i));
+
+        }
+
+
 
 
 
