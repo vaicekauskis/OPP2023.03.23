@@ -68,7 +68,6 @@ public class Plant {
 
     @Override
     public String toString() {
-
        return  " Augalo pavadinimas: " + title +  " Pavadinimas Lotyniškai  :" + titleLatin + " Vienmetis :" +
                (annualPerennial? " Taip " : " Ne ") + " Labiausiai paplitęs :" + plantContinent + " Suaugusio augalo aukštis " +
                (heightAdultPlantInMeters == (int) heightAdultPlantInMeters ? ((int) heightAdultPlantInMeters + "") :
